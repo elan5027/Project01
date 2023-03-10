@@ -1,0 +1,5 @@
+.idea
+JH_Project01.db
+*.pyc
+__pycache__
+migrations
