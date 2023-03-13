@@ -26,3 +26,9 @@
 		height:auto;
 
     }
+
+    #box1{
+        float:left;
+        overflow:hidden;
+        height: auto;
+    }

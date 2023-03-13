@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
+
 <div class="container my-3">
     <div class="row my-3">
         <div class="col-6">
@@ -31,8 +32,8 @@
                             <span class="text-danger small mx-2">댓글 {{ question.answer_set|length }}</span>
                             {% endif %}
                             <div style="float:right">⭐ {{ question.rating }} </div>
+                            <span class="text-danger small mx-2">작성자 {{ question.user.username }}</span>
                         </div>
-
                     </div>
                 </div>
                 {% endfor %}

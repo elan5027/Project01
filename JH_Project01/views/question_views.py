@@ -26,6 +26,7 @@ def _list():
     page = request.args.get('page', type=int, default=1)
     kw = request.args.get('kw', type=str, default='')
     question_list = Question.query.order_by(Question.create_date.desc())
+
     if kw:
         search = '%%{}%%'.format(kw)
         sub_query = db.session.query(Answer.question_id, Answer.content, User.username) \

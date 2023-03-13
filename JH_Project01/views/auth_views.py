@@ -2,9 +2,9 @@ from flask import Blueprint, url_for, render_template, flash, request, session, 
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import redirect
 
-from JH_Project01 import db
-from JH_Project01.forms import UserCreateForm, UserLoginForm
-from JH_Project01.models import User
+from .. import db
+from ..forms import UserCreateForm, UserLoginForm
+from ..models import User
 
 import functools
 
